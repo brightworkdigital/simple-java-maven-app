@@ -19,5 +19,11 @@ pipeline {
                 }
             }
         }
+        stage('Deploy') {
+                    steps {
+                        echo 'Deployment successful!!!'
+                        //sh './jenkins/scripts/deploy.sh'
+                    }
+        }
     }
 }
